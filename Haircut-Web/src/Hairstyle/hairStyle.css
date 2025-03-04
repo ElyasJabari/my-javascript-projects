@@ -1,0 +1,55 @@
+.separator{
+    padding: 40px 148px 0;
+}
+
+.separator h2{
+    margin-bottom: 30px;
+}
+
+.featured{
+    padding: 40px 290px 0;
+}
+
+.featured .item,
+.works-list .item{
+    display: flex;
+    gap: 30px;
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+    border-bottom: 2px solid #e0e0e0;
+}
+
+.featured .item img,
+.works-list .item img{
+    width: 320px;
+    height: 200px;
+    border-radius: 6px;
+}
+.featured .item .fotoSize{
+    width: calc(30% - 70px);
+    height: calc(30% - 70px);
+
+}
+
+.featured .item .details h3,
+.works-list .item h3{
+    font-size: 30px;
+    margin-bottom: 16px;
+    margin-top: 5px;
+}
+
+.featured .item .details .item-info,
+.works-list .item .details .item-info{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.featured .item .details p,
+.works-list .item .details p {
+    width: 700px;
+    text-align: justify;
+    font-family: Georgia, serif;
+    line-height: 1.5; /* Ändern Sie den Zeilenabstand */
+}

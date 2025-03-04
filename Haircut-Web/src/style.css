@@ -1,0 +1,553 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;600;700;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Heebo', sans-serif;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+img{
+    object-fit: cover;
+    object-position: top;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+nav{
+    padding: 20px 148px;
+    /*background-color: #fff;*/
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 600;
+
+}
+
+nav .logo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+nav .logo img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+nav .logo a{
+    font-size: 15px;
+    color: #3e3e3e;
+    font-weight: bold;
+}
+
+nav .nav-links{
+    display: flex;
+    gap: 16px;
+}
+
+nav .nav-links a{
+    transition: color 0.3s ease;
+}
+
+nav .nav-links a:hover,
+nav .nav-links a.selected{
+    color: #303f9f;
+}
+
+.main {
+    padding: 0 148px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    height: calc(100vh - 80px);
+}
+
+.main .info h1{
+    font-size: 44px;
+    margin-bottom: 40px;
+}
+
+.main .info p{
+    font-size: 16px;
+    margin-bottom: 45px;
+    width: 100%;
+}
+
+.main .info h1,
+.main .info h2 {
+    text-shadow: 2px 2px 30px rgb(255, 255, 255);
+}
+
+.backgroung-foto{
+    background-image: url('../assets/backgroung.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.main .info button{
+    padding: 10px 30px;
+    background: #303f9f;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.main .info button:hover{
+    background: #1a237e;
+}
+
+.main img{
+    width: 400px;
+    height: 400px;
+    border-radius: 140px;
+}
+
+.recent{
+    padding: 60px 148px;
+    background-color: #dbedf2;
+}
+
+.recent .header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.recent .header h4,
+.separator h4{
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.recent .header a{
+    color: #303f9f;
+}
+
+.recent .posts{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.recent .posts .post-item{
+    background-color: #fff;
+    padding: 24px;
+    width: 460px;
+}
+
+.recent .posts .post-item h3{
+    font-size: 26px;
+    margin-bottom: 18px;
+}
+
+.recent .posts .post-item .info{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.recent .posts .post-item .info h5{
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.recent .posts .post-item p{
+    width: 400px;
+}
+.recent .posts .post-item .hairStyleFotoSize {
+    width: calc(100% - 48px); // angenommen, dass die Breite das Padding subtrahieren muss
+height: calc(100% - 48px); // angenommen, dass die Höhe das Padding subtrahieren muss
+}
+/* Modal-Stil */
+.modal {
+    display: flex; /* Flexbox für einfaches Zentrieren */
+    align-items: center; /* Zentriert vertikal */
+    justify-content: center; /* Zentriert horizontal */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.7); /* Dunklerer Hintergrund */
+}
+
+/* Modal-Content */
+.modal-content {
+    background-color: #fefefe;
+    padding: 30px; /* Erhöht Padding */
+    border: 2px solid #444; /* Dunklerer Rand */
+    width: 50%; /* Breiterer Content */
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3); /* Schatten für mehr Tiefe */
+}
+.modal-content .myModalImageContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; /* Stellen Sie sicher, dass dieser Container die volle Höhe hat */
+}
+
+.modal-content .myModalImageContainer .myModalFotoSize {
+    height: 40%;
+    width: 40%;
+    border-radius: 140px;
+}
+
+.close {
+    color: #aaaaaa; /* Dunklere Farbe */
+    float: right;
+    font-size: 30px;  /* Größere Schrift */
+    font-weight: bold;
+    transition: 0.3s; /* Übergang für Hover-Effekte */
+}
+
+.close:hover,
+.close:focus {
+    color: #000; /* Rote Farbe bei Hover/Fokus */
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Hidden class definition */
+.hidden {
+    display: none;
+}
+/*model style ende*/
+
+.separator{
+    padding: 40px 148px 0;
+}
+
+.separator h4{
+    margin-bottom: 30px;
+}
+
+/*Tabelle Style*/
+table {
+    width: 80%;
+    margin-left: 10%;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif; /* Setzt die Schriftfamilie für die Tabelle */
+    color: #444; /* Textfarbe */
+    background-color: #f0f0f0; /* Hintergrundfarbe der Tabelle */
+}
+
+th, td {
+    border: 1px solid #ccc; /* Setzt eine Ränder um die Zellen */
+    text-align: left; /* Links ausgerichteter Text */
+    padding: 10px; /* Setzt den Innenabstand der Zellen */
+}
+
+th {
+    background-color: #555; /* Hintergrundfarbe der Überschriften */
+    color: #fff; /* Textfarbe der Überschriften */
+    text-transform: uppercase; /* Setzt den Text der Überschrift in Großbuchstaben um */
+    text-align: center;
+}
+td {
+    max-width: 100px; /* Ändern Sie dies auf die maximale Zellenbreite, die Sie bevorzugen */
+    overflow: auto; /* Ermöglicht das Scrollen, wenn der Inhalt die Zellenbreite überschreitet */
+    white-space: nowrap; /* Verhindert das Umbruch des Textes auf die nächste Zeile */
+}
+td.tdValue {
+    /* Zentriert den Inhalt der Zellen mit der Klasse '.tdValue' */
+    text-align: center;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2; /* Setzt eine Hintergrundfarbe für jede zweite Zeile */
+}
+
+tr.evenHour {
+    background-color: #faf4ed; /* Farbe für Stunden mit gerader Zahl (also 10:00, 12:00 usw.) */
+}
+tr.oddHour {
+    background-color: #F0F8FF; /* Farbe für Stunden mit ungerader Zahl (also 09:00, 11:00 usw.) */
+}
+
+.addNameBtn {
+    background-color: #555;
+    border: none;
+    color: white;
+    padding: 8px 50px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 12px;
+}
+/* The Modal (background) */
+.TableModal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.table-modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 40%; /* Could be more or less, depending on screen size */
+}
+/* Styling for the label */
+.table-modal-content form label {
+    display: block;
+    margin-bottom: 15px;
+    color: #4A4A4A;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+/* Styling for the text input */
+.table-modal-content form input[type="text"] {
+    display: block;
+    width: 100%;
+    padding: 5px;
+    border: 2px solid #e0e0e0;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #4A4A4A;
+    margin-bottom: 20px;
+}
+
+/* Styling for the submit button */
+.table-modal-content form input[type="submit"] {
+    display: inline-block;
+    padding: 12px 24px;
+    border: none;
+    background-color: #555;
+    color: white;
+    cursor: pointer;
+    border-radius: 12px;
+    font-size: 16px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+/* Change background on hover for submit button */
+.table-modal-content form input[type="submit"]:hover {
+    background-color: #706f6f;
+}
+
+/* The Close Button */
+.tableClose {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.tableClose:hover,
+.tableClose:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/*Tebelle Ende*/
+
+
+footer{
+    padding: 40px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer .socials{
+    display: flex;
+    align-items: center;
+    gap: 28px;
+    margin-bottom: 20px;
+}
+
+footer .socials i{
+    font-size: 40px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+footer .socials i:hover{
+    color: #303f9f;
+}
+
+footer p{
+    font-size: 14px;
+}
+
+.page-title{
+    padding: 80px 234px 20px;
+    width: 100%;
+}
+
+@media screen and (max-width: 1400px) {
+
+    nav{
+        padding: 20px 60px;
+    }
+
+    .main{
+        padding: 0 60px;
+    }
+
+    .recent{
+        padding: 60px;
+    }
+
+    .separator{
+        padding: 40px 60px 0;
+    }
+
+    .page-title{
+        padding: 80px 60px 20px;
+    }
+
+}
+
+@media screen and (max-width: 1200px) {
+
+    nav{
+        padding: 20px 40px;
+    }
+
+    .main{
+        padding: 0 40px;
+    }
+
+    .main img{
+        width: 340px;
+        height: 340px;
+    }
+
+    .recent{
+        padding: 40px;
+    }
+
+    .separator{
+        padding: 40px 40px 0;
+    }
+
+    .page-title{
+        padding: 80px 40px 20px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+
+    nav{
+        padding: 20px;
+    }
+
+    .main{
+        padding: 0 20px;
+    }
+
+    .main img{
+        width: 300px;
+        height: 300px;
+    }
+
+    .main .info h1{
+        font-size: 34px;
+    }
+
+    .main .info p{
+        font-size: 15px;
+    }
+
+    .main .info button{
+        font-size: 15px;
+        padding: 8px 22px;
+    }
+
+    .recent{
+        padding: 40px 20px;
+    }
+
+    .recent .posts .post-item{
+        width: 100%;
+    }
+
+    .recent .posts .post-item h3{
+        font-size: 20px;
+    }
+
+    .recent .posts .post-item .info h5{
+        font-size: 14px;
+    }
+
+    .recent .posts .post-item p{
+        width: 100%;
+        font-size: 14px;
+    }
+
+    .separator{
+        padding: 40px 20px 0;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+
+    nav{
+        justify-content: center;
+    }
+
+    nav .logo{
+        display: none;
+    }
+
+    .main{
+        flex-direction: column;
+        justify-content: space-around;
+        margin: 40px 0;
+        height: auto;
+    }
+
+    .main .info h1{
+        font-size: 30px;
+        margin-bottom: 16px;
+    }
+
+    .main .info p{
+        margin-bottom: 16px;
+    }
+
+    .main .info button{
+        padding: 6px 20px;
+        font-size: 13px;
+    }
+
+    .main img{
+        margin-top: 20px;
+        width: 100%;
+        height: auto;
+        border-radius: 50px;
+    }
+
+    .recent .posts{
+        flex-direction: column;
+    }
+
+}

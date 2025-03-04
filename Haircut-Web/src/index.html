@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="style.css">
+  <title>Friseursalon</title>
+</head>
+
+<body>
+  <div class="backgroung-foto">
+  <nav>
+    <div class="logo">
+      <img src="../assets/logo.png">
+      <a href="#">Friseur</a>
+    </div>
+    <div class="nav-links">
+      <a class="selected" href="index.html">Home</a>
+      <a href="Hairstyle/hairStyle.html">Works</a>
+      <a href="single-work.html">Single Work</a>
+      <a href="blog.html">Blog</a>
+      <a href="about.html">About</a>
+    </div>
+  </nav>
+
+    <div class="main">
+      <div class="info">
+        <h1>Willkommen zur Flechtfrisur!</h1>
+        <p><h2>Unser Friseursalon bietet individuelle Beratung und kreative Haarschnitte, die perfekt zu Ihrem Stil passen. Mit hochwertigen Produkten und einem erfahrenen Team sorgen wir für gesundes, glänzendes Haar. Kommen Sie vorbei und lassen Sie sich verwöhnen!</h2></p>
+        <button>Termin buchen</button>
+      </div>
+      <img src="../assets/Frisuersalon.webp">
+    </div>
+
+  </div>
+
+
+  <div class="recent">
+    <div class="header">
+      <h4>Hairstyle</h4>
+      <a href="Hairstyle/hairStyle.html">View all</a>
+    </div>
+
+<!--    model einfügen-->
+    <!-- Modal für Post-Item 1 -->
+    <div id="myModal1" class="modal hidden">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Der Undercut</h2><br>
+        <h3>So geht's:</h3>
+        <p>Es gibt keine Vorgaben, wie kurz oder lang Ihr Haar sein muss, um einen Undercut zu tragen. Außerdem können die Seiten mit einem 9-mm-Aufsatz (typischerweise ein #3 Aufsatz) oder so lang wie ein 21-mm-Aufsatz (typischerweise ein #10 Aufsatz) abgeschnitten werden. Das macht ihn für die meisten Menschen ideal, da er flexibel, leicht zu pflegen und individuell zu gestalten ist. Unser Tipp: Wenn Ihr Deckhaar 5 cm lang ist, eignet sich ein 12-mm-Aufsatz (normalerweise ein #4-Aufsatz) an den Seiten am besten. Wenn Ihr Deckhaar jedoch 12 bis 15 cm lang ist, wäre ein 24-mm-Aufsatz (typischerweise ein #12er Aufsatz) am besten geeignet.</p><br>
+        <div class="myModalImageContainer">
+          <img class="myModalFotoSize" src="../hairStyle/derUnderCut.webp">
+        </div>
+      </div>
+    </div>
+    <!-- Modal für Post-Item 2 -->
+    <div id="myModal2" class="modal hidden">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Quiff Style</h2><br>
+        <h3>So geht's:</h3>
+        <p>Die Tolle ist genau wie die Pompadour-Frisur, wobei der Hauptunterschied darin besteht, wie sie gestylt wird. Wenn Sie die obigen Anweisungen für einen Pompadour-Haarschnitt befolgt haben, föhnen Sie Ihr Haar zunächst trocken. Ziehen Sie Ihr Haar mit einem Kamm oder einer Bürste vom Ansatz weg, um ihm so viel Volumen wie möglich zu geben. Erwärmen Sie dann eine münzgroße Menge Pomade in Ihren Händen. Arbeiten Sie das Produkt vom Hinterkopf aus nach vorne ins Haar ein. Beginnen Sie am Ansatz und arbeiten Sie es bis zu den Haarspitzen ein. Achten Sie darauf, das Produkt gleichmäßig zu verteilen. Führen Sie abschließend einen zweiten Durchgang mit dem Föhn durch, um Ihrem Haar mehr Definition und Volumen zu verleihen. Für zusätzlichen Halt können Sie Haarspray verwenden.</p><br>
+        <div class="myModalImageContainer">
+          <img class="myModalFotoSize" src="../hairStyle/quiffStyle.webp">
+        </div>
+      </div>
+    </div>
+    <!-- Modal für Post-Item 3 -->
+    <div id="myModal3" class="modal hidden">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Pompadour-Haarschnitt</h2><br>
+        <h3>So geht's:</h3>
+        <p>Um diesen Look zu erzielen, müssen Sie sich zunächst einen Fade verpassen (siehe Abschnitt Fade Haircut Style). Nachdem Sie den Hinterkopf und die Seiten ordentlich ausgeblendet haben, schneiden Sie den oberen Teil Ihres Haares ab. Wenn Sie sich für eine Länge entschieden haben, nehmen Sie Teile Ihres Haares mit Zeige- und Mittelfinger und halten Sie bei der gewünschten Länge an. Schneiden Sie mit der Haarschere gerade durch, wobei Sie Ihre Finger als Führung verwenden. Wiederholen Sie diesen Vorgang, bis alle Abschnitte geschnitten sind. Achten Sie darauf, dass alle Abschnitte gleichmäßig geschnitten sind.</p><br>
+        <div class="myModalImageContainer">
+          <img class="myModalFotoSize" src="../hairStyle/pompadour-Haarschnitt.webp">
+        </div>
+      </div>
+    </div>
+
+    <div class="posts">
+      <div id="post1" class="post-item">
+        <h3>Der Undercut</h3>
+        <img class="hairStyleFotoSize" src="../hairStyle/derUnderCut.webp">
+      </div>
+      <div id="post2" class="post-item">
+        <h3>Quiff Style</h3>
+        <img class="hairStyleFotoSize" src="../hairStyle/quiffStyle.webp">
+      </div>
+      <div id="post3" class="post-item">
+        <h3>Pompadour-Haarschnitt</h3>
+        <img class="hairStyleFotoSize" src="../hairStyle/pompadour-Haarschnitt.webp">
+      </div>
+    </div>
+  </div>
+
+  <div class="separator">
+    <h4>Termin</h4>
+  </div>
+  <table>
+    <thead>
+    <tr>
+      <th>Zeit</th>
+      <th>Stunde</th>
+      <th>Paul</th>
+      <th>Luca</th>
+      <th>Jonas</th>
+      <th>Tim</th>
+    </tr>
+    </thead>
+    <tbody id="timeSlots">
+    </tbody>
+  </table>
+  <!-- Modal -->
+  <div id="myTableModal" class="TableModal">
+    <div class="table-modal-content">
+      <span class="tableClose">&times;</span>
+      <form>
+        <label for="modalLabelValue">Geben Sie Ihr Name ein:</label>
+        <input type="text" id="modalLabelValue" name="name">
+        <input type="submit" id="tableSubmit" value="Submit">
+      </form>
+    </div>
+  </div>
+
+  <footer>
+    <div class="socials">
+      <i class='bx bxl-facebook-square'></i>
+      <i class='bx bxl-instagram'></i>
+      <i class='bx bxl-twitter'></i>
+      <i class='bx bxl-linkedin-square'></i>
+    </div>
+    <p>Copyright ©2024, All rights reserved.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>
