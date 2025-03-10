@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en" id="top">
+<head>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;900&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Kitchen</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="home">
+		<!-- Header Section-->
+		<header>
+			<!-- Header Menu Bar -->
+			<div class="menu">
+				<div class="bar"></div>
+			</div>
+			<div class="close-menu">
+				<div class="c-bar"></div>
+			</div>
+					
+			<!-- Menu bar contents -->
+			<div class="menu-contents">
+				<ul>
+					<li><a href="#top">Home</a></li>
+					<li><a href="#breakfast">Breakfast</a></li>
+					<li><a href="#dinner">Lunch & Dinner</a></li>
+					<li><a href="#footer">Contact</a></li>
+				</ul>
+			</div>
+			
+			<!-- Header Main Logo -->
+			<a class="brand" href="#top"><img class="logo" src="images/logo.png"><span>Online</span>Kitchen</a>
+			
+			<!-- Header login -->
+			<div class="login">
+				<a class="login-btn" href="#">Log in</a>
+			</div>
+			
+			<div class="cart" onclick="alert('Comming Soon')">
+				<img src="Icons/cart.png">
+				<span id="cart-n">0</span>
+			</div>
+		</header>
+		
+		<!-- Home Content Section -->
+		<section class="container">
+			<div class="home-content">
+				<h1 class="title">Hungrig?</h1>
+				<p class="para">Beste Qualität an Speisen und Getränken warten auf dich. Du kannst deine Bestellung in nur wenigen Minuten mit deiner Online-Küche aufgeben.</p>		
+				
+				<!-- Discount -->
+				<div class="discount">
+					<h2 class="discount-txt">Geschenk für dich<br> <span>bekomme zufällig kostenloses Essen</span></h2>
+					<button class="discount-btn" type="submit">versuche dein Glück</button>
+					<div class="rand-food">
+						<h2 class="food-name"></h2>
+						<img class="food-img" src="">
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+		
+	<!--Shop section -->
+	<section class="container liked-foods">
+		<h1 class="menu-h">Essen, das dir gefallen könnte</h1>
+		<div class="foods-row">
+			<div class="food">
+				<p class="f-info">Hamburger <br> <span>	12,59€</span></p>
+				<img src="images/foods/hamburger.png">
+				<div class="buy buyF">Buy</div>
+			</div>
+			
+			<div class="food">
+				<p class="f-info">Fired Rice <br> <span>8,99€</span></p>
+				<img src="images/foods/rice.png">
+				<div class="buy buyF">Buy</div>
+			</div>
+			
+			<div class="food">
+				<p class="f-info">Orange Juice <br> <span>4,49€</span></p>
+				<img src="images/foods/juice.png">
+				<div class="buy buyF">Buy</div>
+			</div>
+			
+			<div class="food">
+				<p class="f-info">Chicken k. <br> <span>11,99€</span></p>
+				<img src="images/foods/chicken-kabab.png"> <br>
+				<div class="buy buyF">Buy</div>
+			</div>
+		</div>
+		
+		<div class="popular-f">
+			<div class="dis-info">
+				<h2>Hast du unser Angebot bekommen?</h2>
+				<p>Du kannst dein Lieblingsessen jetzt mit <br> <span>50% Rabatt</span> bekommen.</p>
+			</div>
+			
+			<h2 class="menu-h">Beliebtes Menü</h2>
+			<div class="our-f">
+				<div class="food-card">
+					<img src="images/foods/fruits-Vegitables/banana.jpg">
+					<h2>Banana</h2>
+					<p>Fresh banana</p>
+					<h3 class="price"><del>4,49€</del></h3>
+					<h3 class="price">2,25€</h3>
+					<div class="buy">In den Warenkorb</div>
+				</div>
+			
+				<div class="food-card">
+					<img src="images/foods/lunch-dinner/chicken.png">
+					<h2>Chicken</h2>
+					<p>Fried Chicken</p>
+					<h3 class="price"><del>9,99€</del></h3>
+					<h3 class="price">6,99€</h3>
+					<div class="buy">In den Warenkorb</div>                
+				</div>
+			
+				<div class="food-card">
+					<img src="images/foods/fruits-Vegitables/pomegrannet.jpg">
+					<h2>Pomegranate</h2>
+					<p>Fresh pomegranate</p>
+					<h3 class="price"><del>3,99€</del></h3>
+					<h3 class="price">2,49€</h3>
+					<div class="buy">In den Warenkorb</div>
+				</div>
+			
+				<div class="food-card">
+					<img src="images/foods/drinks/beer.png">
+					<h2>Beer</h2>
+					<p>Cold beer</p>
+					<h3 class="price"><del>1,99€</del></h3>
+					<h3 class="price">1,49€</h3>
+					<div class="buy">In den Warenkorb</div>                
+				</div>
+			
+				<div class="food-card">
+					<img src="images/foods/hamburger.png">
+					<h2>Hamburger</h2>
+					<p>Large hamburger</p>
+					<h3 class="price"><del>5,99€</del></h3>
+					<h3 class="price">3,99€</h3>
+					<div class="buy">In den Warenkorb</div>
+				</div>
+			
+				<div class="food-card">
+					<img src="images/foods/rice.png">
+					<h2>Rice</h2>
+					<p>A plate of rice</p>
+					<h3 class="price"><del>4,49€</del></h3>
+					<h3 class="price">2,99€</h3>
+					<div class="buy">In den Warenkorb</div>            
+				</div>
+			
+				<div class="food-card">
+					<img src="images/foods/chicken-kabab.png">
+					<h2>Chicken Kabab</h2>
+					<p>Delicious chicken kabab</p>
+					<h3 class="price"><del>7,99€</del></h3>
+					<h3 class="price">5,49€</h3>
+					<div class="buy">In den Warenkorb</div>
+				</div>
+			
+				<div class="food-card">
+					<img src="images/foods/fruits-Vegitables/red-percimmon.jpg">
+					<h2>Persimmon</h2>
+					<p>Red fresh persimmon</p>
+					<h3 class="price"><del>3,49€</del></h3>
+					<h3 class="price">2,29€</h3>
+					<div class="buy">In den Warenkorb</div>
+				</div>
+			</div>			
+			<button type="submit" class="all-menu">See All Menu</button>
+			
+		</div>
+	</section>
+
+	<!-- Breakfast -->
+	<section class="container breakfast" id="breakfast">
+		<h1 class="menu-h">Frühstück</h1>
+		<div class="br-food">
+			<div class="food-card br">
+				<img src="images/foods/breakfast/biscuit.png">
+				<h2>Keks</h2>
+				<p>Leckerer Keks zum Frühstück</p>
+				<h3 class="price"><del>2,49€</del></h3>
+				<h3 class="price">1,25€</h3>
+				<div class="buy">In den Warenkorb</div>
+			</div>    
+
+			<div class="food-card br">
+				<img src="images/foods/breakfast/cake-milk.png">
+				<h2>Milch mit Kuchen</h2>
+				<p>Ein Stück Kuchen mit frischer Milch</p>
+				<h3 class="price"><del>4,99€</del></h3>
+				<h3 class="price">2,99€</h3>
+				<div class="buy">In den Warenkorb</div>
+			</div>    
+
+			<div class="food-card br">
+				<img src="images/foods/breakfast/biscuit.png">
+				<h2>Keks mit Tee</h2>
+				<p>Keks mit einer Tasse frischem Tee</p>
+				<h3 class="price"><del>2,99€</del></h3>
+				<h3 class="price">1,50€</h3>
+				<div class="buy">In den Warenkorb</div>
+			</div>    
+
+			<div class="food-card br">
+				<img src="images/foods/breakfast/tea%20-cake.png">
+				<h2>Kuchen mit Tee</h2>
+				<p>Ein Stück Kuchen mit einer Tasse Tee</p>
+				<h3 class="price"><del>3,99€</del></h3>
+				<h3 class="price">2,49€</h3>
+				<div class="buy">In den Warenkorb</div>
+			</div>    
+
+			<div class="food-card br">
+				<img src="images/foods/breakfast/egg-cheese.png" style="width: 110px">
+				<h2>Ei mit Käse</h2>
+				<p>Ei, Käse und frisches Sandwich</p>
+				<h3 class="price"><del>5,99€</del></h3>
+				<h3 class="price">3,99€</h3>
+				<div class="buy">In den Warenkorb</div>
+			</div>    
+
+			<div class="food-card br">
+				<img src="images/foods/coffee.png">
+				<h2>Kaffee</h2>
+				<p>Eine heiße Tasse Kaffee</p>
+				<h3 class="price"><del>2,49€</del></h3>
+				<h3 class="price">1,49€</h3>
+				<div class="buy">In den Warenkorb</div>
+			</div>        
+		</div>
+		<div id="next-btn">
+			<button type="submit" class="next"></button>
+		</div>
+
+		<div id="prev-btn">
+			<button type="submit" class="prev"></button>
+		</div>				
+	</section>
+		
+	<!--	Lunch and dinner-->
+	<section class="container dinner" id="dinner">
+		<h1 class="menu-h">Mittag- & Abendessen</h1>
+		<div class="dn-food">
+			<div class="food-card">
+				<img src="images/foods/lunch-dinner/chicken.png">
+				<h2>Gebratenes Hähnchen</h2>
+				<p>Knuspriges, gebratenes Hähnchen</p>
+				<h3 class="price"><del>9,99€</del></h3>
+				<h3 class="price">5,99€</h3>
+				<div class="buy">In den Warenkorb</div>
+			</div>    
+		
+			<div class="food-card">
+				<img src="images/foods/lunch-dinner/chips.png">
+				<h2>Pommes</h2>
+				<p>Pommes mit Würstchen</p>
+				<h3 class="price"><del>3,99€</del></h3>
+				<h3 class="price">2,49€</h3>
+				<div class="buy">In den Warenkorb</div>
+			</div>    
+
+			<div class="food-card br">
+				<img src="images/foods/lunch-dinner/pizza.png">
+				<h2>Pizza</h2>
+				<p>Große Pizza mit Belag nach Wahl</p>
+				<h3 class="price"><del>12,99€</del></h3>
+				<h3 class="price">7,99€</h3>
+				<div class="buy">In den Warenkorb</div>
+			</div>    
+		
+			<div class="food-card br">
+				<img src="images/foods/lunch-dinner/sambosa.png">
+				<h2>Samosa</h2>
+				<p>10 Stück Samosa</p>
+				<h3 class="price"><del>4,99€</del></h3>
+				<h3 class="price">3,49€</h3>
+				<div class="buy">In den Warenkorb</div>
+			</div>    
+		
+			<div class="food-card br">
+				<img src="images/foods/lunch-dinner/spaghetti.png">
+				<h2>Spaghetti</h2>
+				<p>Ein Teller Spaghetti mit Sauce</p>
+				<h3 class="price"><del>7,99€</del></h3>
+				<h3 class="price">5,49€</h3>
+				<div class="buy">In den Warenkorb</div>
+			</div>    
+		
+			<div class="food-card br">
+				<img src="images/foods/lunch-dinner/chicken.png">
+				<h2>Gebratenes Hähnchen</h2>
+				<p>Großes, gebratenes Hähnchen</p>
+				<h3 class="price"><del>8,99€</del></h3>
+				<h3 class="price">5,99€</h3>
+				<div class="buy">In den Warenkorb</div>
+			</div>        
+		</div>
+		<div id="next-btn" class="next-dn">
+			<button type="submit" class="next"></button>
+		</div>
+
+		<div id="prev-btn" class="prev-dn">
+			<button type="submit" class="prev"></button>
+		</div>
+	</section>
+	
+	<footer id="footer">
+		<div class="contact">
+			<h1>Kontakt</h1>
+			<form action="#" method="get">
+				<input type="text" placeholder="Enter your name">
+				<input type="email" placeholder="Enter your email address">
+				<textarea cols="10" rows="5" placeholder="Comment"></textarea>
+				<button class="all-menu" type="submit">Send</button>
+			</form>
+		</div>
+		
+		<div class="about">
+			<h1>Über uns</h1>
+			<p>Willkommen bei Online Kitchen! Wir bieten dir eine Vielzahl an köstlichen Gerichten, die mit frischen Zutaten und viel Liebe zubereitet werden. Unser Ziel ist es, dir ein unvergessliches kulinarisches Erlebnis zu bieten – schnell, lecker und immer von höchster Qualität.</p>		</div>
+
+	</footer>
+	<p class="copy"> Copyright © 2021 All Right Reserved By <i>HASEEBULLAH</i> - 19-RY200-132</p>
+
+	<script src="script.js"></script>
+</body>
+</html>
